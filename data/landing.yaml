@@ -1,0 +1,68 @@
+# Hero
+hero:
+  enable: true
+  weight: 10
+  template: hero
+
+  backgroundImage:
+    path: "images/templates/hero"
+    filename:
+      desktop: "gradient-desktop.webp"
+      mobile: "gradient-mobile.webp"
+
+  badge:
+    text: v2025.6.26
+    color: primary # primary, secondary, success, danger, warning, info, light, dark
+    pill: false # boolean
+    soft: true # boolean
+
+  title: "The Vinaya Notebook"
+  subtitle: A powerful collection of offline resources for studying and writing about the Vinaya on any device.
+
+  image:
+    path: "images/screenshots/" # path to image under configured assets directory. default 'images'
+    filename: "teaching_by_rote.png" # filename of your hero image (including file extension)
+    alt: "Screenshot of the Vault in Obsidian" # Optional but recommended
+    boxShadow: true # default 'false' (excludes .svg images)
+    rounded: true # round the image corners? default 'false' (excludes .svg images)
+
+  ctaButton:
+    icon: download
+    btnText: "Download the Vault"
+    url: "/docs/quickstart/#create-a-new-lotus-docs-site"
+  cta2Button:
+    icon: school
+    btnText: "Learn More"
+    url: "https://github.com/colinwilson/lotusdocs"
+
+  info: " "
+
+featureGrid:
+  enable: true
+  weight: 20
+  template: feature grid
+  title: Why use Vinaya Notes?
+  subtitle: The Vinaya Notebook collects together resources from many teachers to help you study and write about the Vinaya.
+  items:
+  - title: Offline
+    icon: offline_pin
+    description: Take everything you need with you to answer questions about the Vinaya as they come up.
+  - title: Share How You Like
+    icon: connect_without_contact
+    description: Since all the notes you take are simply files on your device, you're in control of how and when you share your thoughts.
+  - title: Link Easily
+    icon: link
+    description: Create a shared web of knowledge by linking your notes to the resources they're in conversation with---all in the same vault.
+  - title: Powerful Searching
+    icon: search
+    description: Find every note about a topic---or just the one you're looking for---with your app's built-in search.
+  - title: Blazing Fast
+    icon: speed
+    description: Small, plain text files, with no extra dependencies keeps things fast and lightweight.
+  - title: Automatic Updates
+    icon: cloud_download
+    description: Automatically get new notes and translations as they become available with the included Obsidian plugin.
+
+
+imageCompare:
+  enable: false
