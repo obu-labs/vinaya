@@ -33,7 +33,6 @@ hugo.linux
 .vscode/
 *.swp
 *.swo
-*.bak
 
 # macOS specific
 .DS_Store

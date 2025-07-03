@@ -64,7 +64,7 @@ jobs:
       - name: Fill in Dynamic Variables
         run: |
           today_version="v$(date +%Y.%m.%d)"
-          sed -i.bak "s/{{TODAY_VERSION}}/${today_version}/g" data/landing.yaml
+          sed -i "s/{{TODAY_VERSION}}/${today_version}/g" data/landing.yaml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
