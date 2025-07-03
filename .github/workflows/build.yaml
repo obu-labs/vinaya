@@ -1,4 +1,6 @@
 name: Deploy Hugo site to Pages
+# This workflow is a fork of https://gohugo.io/host-and-deploy/host-on-github-pages/
+# If it stops working, maybe check there for any updates?
 on:
   workflow_dispatch:
   workflow_call:
@@ -8,7 +10,6 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
   id-token: write
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -60,6 +61,10 @@ jobs:
           path: |
             vaultbuilder/data
           key: ${{ steps.vault-cache-restore.outputs.cache-primary-key }}
+      - name: Fill in Dynamic Variables
+        run: |
+          today_version="v$(date +%Y.%m.%d)"
+          sed -i.bak "s/{{TODAY_VERSION}}/${today_version}/g" data/landing.yaml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -97,6 +102,8 @@ jobs:
 
   # Deployment job
   deploy:
+    permissions:
+      pages: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -106,3 +113,29 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Invalidate the CloudFlare Cache
+        shell: bash
+        run: |
+          echo "Hitting the CloudFlare API..."
+          HTTP_RESPONSE=$(curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE }}/purge_cache" -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" -H "Content-Type:application/json" -w "HTTP_STATUS:%{http_code}" --data '{"prefixes":["labs.buddhistuniversity.net/vinaya"]}')
+          HTTP_BODY=$(echo "${HTTP_RESPONSE}" | sed -E 's/HTTP_STATUS\:[0-9]{3}$//')
+          HTTP_STATUS=$(echo "${HTTP_RESPONSE}" | tr -d '\n' | sed -E 's/.*HTTP_STATUS:([0-9]{3})$/\1/')
+          if [ "${HTTP_STATUS}" -eq "200" ]; then
+            SUCCESS=$(echo ${HTTP_BODY} | python3 -c "import sys, json;print(json.load(sys.stdin)['success'])")
+            if [ "${SUCCESS}" = "True" ]; then
+              echo "Successfully purged!"
+              echo "::group::Raw response"
+              echo "${HTTP_BODY}"
+              echo "::endgroup::"
+              exit 0
+            else
+              echo "Unsuccessful purge!"
+              echo "API response was:"
+              echo "${HTTP_BODY}"
+              exit 1
+            fi
+          else
+            echo "Request failed. API response was ($HTTP_STATUS): "
+            echo "${HTTP_BODY}"
+            exit 1
+          fi
