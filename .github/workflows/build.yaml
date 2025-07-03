@@ -51,6 +51,7 @@ jobs:
       - name: Build the Vault
         run: |
           pip install -r vaultbuilder/requirements.txt
+          mkdir -p static
           python vaultbuilder/generate_vault.py
       - name: Vault Cache Save
         id: vault-cache-save
