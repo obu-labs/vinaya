@@ -1,0 +1,12 @@
+{
+  "backlink": true,
+  "file-explorer": true,
+  "global-search": true,
+  "graph": false,
+  "outgoing-link": true,
+  "properties": true,
+  "publish": false,
+  "slides": false,
+  "tag-pane": false,
+  "webviewer": true
+}

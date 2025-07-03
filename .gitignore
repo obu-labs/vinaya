@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/hugo
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
+/vaultbuilder/data/
+static/vinaya-notes.zip
+
 ### Hugo ###
 # Generated files by hugo
 /public/

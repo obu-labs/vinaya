@@ -1,0 +1,14 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "propertiesInDocument": "visible",
+  "spellcheck": false,
+  "useTab": false,
+  "tabSize": 4,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "My Drafts",
+  "attachmentFolderPath": "My Drafts/attachments",
+  "userIgnoreFilters": [
+    ".git"
+  ]
+}

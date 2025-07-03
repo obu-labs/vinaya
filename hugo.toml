@@ -18,3 +18,14 @@ title = 'The Vinaya Notebook'
     repoURL = "https://github.com/obu-labs/vinaya"
     lastMod = true
 
+[outputFormats]
+
+[outputFormats.JSON]
+mediaType = "application/json"
+baseName = "canonicalvnms"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "JSON"]
+

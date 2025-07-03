@@ -1,0 +1,8 @@
+{{- $vnms := .Site.Data.vnms -}}
+{{- $first := true -}}
+{
+  {{- range $folder, $data := $vnms -}}
+  {{- if not $first }},{{ end }}
+  "{{ $folder }}": "{{ $data.vnm }}"
+  {{- $first = false }}{{ end }}
+}
