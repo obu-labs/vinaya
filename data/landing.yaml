@@ -11,7 +11,7 @@ hero:
       mobile: "gradient-mobile.webp"
 
   badge:
-    text: v2025.6.26
+    text: v2025.7.3
     color: primary # primary, secondary, success, danger, warning, info, light, dark
     pill: false # boolean
     soft: true # boolean
@@ -29,11 +29,11 @@ hero:
   ctaButton:
     icon: download
     btnText: "Download the Vault"
-    url: "/docs/quickstart/#create-a-new-lotus-docs-site"
+    url: "vinaya-notes.zip"
   cta2Button:
-    icon: school
-    btnText: "Learn More"
-    url: "https://github.com/colinwilson/lotusdocs"
+    icon: rocket_launch
+    btnText: "Getting Started"
+    url: "docs/installing"
 
   info: " "
 

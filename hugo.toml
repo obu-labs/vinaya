@@ -1,6 +1,8 @@
 baseURL = 'https://labs.buddhistuniversity.net/vinaya/'
 languageCode = 'en-us'
+enableEmoji = true
 title = 'The Vinaya Notebook'
+enableGitInfo = true
 
 [module]
     replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
@@ -11,12 +13,32 @@ title = 'The Vinaya Notebook'
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
 
+[[menu.primary]]
+    name  = "Docs"
+    url = "/docs/"
+    identifier = "docs"
+    weight = 10
+
 [params]
 
+[params.social]
+    github = "obu-labs"
+
 [params.docs]
+    title = "About the Vinaya Notebook"
     darkMode = true
     repoURL = "https://github.com/obu-labs/vinaya"
+    repoBranch = "main"
     lastMod = true
+    sidebarIcons = true
+    titleIcon = true
+    navDesc = true
+    descriptions = true
+    navDescTrunc = 80
+
+[params.footer]
+    copyright = "© :YEAR: Open Buddhist University. Not for commercial use."
+    version = true
 
 [outputFormats]
 
