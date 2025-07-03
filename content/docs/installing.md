@@ -24,7 +24,7 @@ For information on using the vault with other notes apps, see [Other Notes Apps]
 
 ## Download the vault
 
-Download the latest version of the vault [**here**](/vinaya-notes.zip).
+Download the latest version of the vault [**here**](../../vinaya-notes.zip).
 
 ## Installing
 
