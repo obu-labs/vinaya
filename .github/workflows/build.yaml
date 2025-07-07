@@ -62,6 +62,8 @@ jobs:
           restore-keys:
             vaultbuilder-
       - name: Build the Vault
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           pip install -r vaultbuilder/requirements.txt
           mkdir -p static

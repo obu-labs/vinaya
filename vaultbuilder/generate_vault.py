@@ -78,7 +78,20 @@ def hash_for_folder(folder_path: Path) -> str:
   return hash_for_file_list(file_list)
 
 print("Downloading the latest Vinaya Notes Plugin...")
-PLUGIN_RELEASE = requests.get("https://api.github.com/repos/obu-labs/vinaya-notebook/releases/latest").json()
+headers = {
+  "Accept": "application/vnd.github+json"
+}
+token = None
+if 'GITHUB_TOKEN' in os.environ:
+  token = os.environ['GITHUB_TOKEN']
+if 'GH_TOKEN' in os.environ:
+  token = os.environ['GH_TOKEN']
+if token:
+  headers['Authorization'] = f"Bearer {token}"
+PLUGIN_RELEASE = requests.get(
+  "https://api.github.com/repos/obu-labs/vinaya-notebook/releases/latest",
+  headers=headers
+).json()
 latest_release = PLUGIN_RELEASE["tag_name"]
 LOCAL_FOLDERS["Vinaya Notebook"] = PLUGIN_DIR / latest_release
 if LOCAL_FOLDERS["Vinaya Notebook"].exists():
