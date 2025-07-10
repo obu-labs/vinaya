@@ -1,0 +1,5 @@
+<ul>
+  {{ range $key, $_ := .Site.Data.vnms }}
+    <li>{{ $key }}</li>
+  {{ end }}
+</ul>

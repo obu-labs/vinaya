@@ -19,6 +19,11 @@ enableGitInfo = true
     identifier = "docs"
     weight = 10
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 
 [params.social]
