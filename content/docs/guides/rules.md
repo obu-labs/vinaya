@@ -17,7 +17,7 @@ Let's walk through each part of this step-by-step:
 
 | Rule note element | Explanation |
 |--|--|
-| Path | The path of the rule file. |
+| Path | The path to the rule file. |
 | Filename | The name of the rule. Type `[[` and a Filename to link to a note from one of your own notes. |
 | SC UID | Sutta Central's Unique Identifier for this rule. <br /> In Obsidian, you can also use `aliases` to link to a note. |
 | The Rule | The Pāli text of the rule along with Ajahn Brahmali's translation |
@@ -27,7 +27,7 @@ Let's walk through each part of this step-by-step:
 | External links | Any links with a {{< icon open_in_new >}} at the end will open in your browser. (On Desktop, you can enable "{{< icon settings >}} → Core plugins → Web viewer" to open external links in Obsidian itself.) |
 | | |
 
-## Digging Deeper
+## Links to further reading
 
 Below the rule itself, you'll find various links to dig deeper into the rule:
 
