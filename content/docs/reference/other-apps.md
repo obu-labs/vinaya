@@ -6,13 +6,21 @@ date: "2025-07-03T11:44:14+07:00"
 toc: true
 ---
 
-The vault should also work with:
+While the Vinaya Notebook was built to work with Obsidian, it also works well with:
  - [Zettlr](https://zettlr.com/)
  - [QOwnNotes](https://www.qownnotes.org/)
  - [Notable](https://notable.app/)
- - or the markdown editor of your choice
 
-However, these will have to be updated manually, as the Notebook Plugin only works with Obsidian.
+If you use one of these apps, you'll have to periodically update your folder manually.
+For installing in these apps, see the app-specific instructions below.
+
+The vault is **not** currently compatible with:
+  - [Joplin](https://joplinapp.org/)
+    - When importing Markdown notes with Frontmatter, Joplin currently doesn't read the file names.
+    - This will be fixed in version 3.5 thanks to [this commit](https://github.com/laurent22/joplin/commit/b2cdfd6358cbd0b9f4d864413f5facb6209ff3e6).
+  - [Logseq](https://logseq.com/)
+    - Logseq doesn't understand local Markdown links and has no plans to support them.
+    - See [this discussion](https://github.com/logseq/logseq/discussions/8003) for more details.
 
 ## Zettlr
 
