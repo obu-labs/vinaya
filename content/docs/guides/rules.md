@@ -7,6 +7,17 @@ date: "2025-07-10T09:35:14+07:00"
 toc: true
 ---
 
+
+## Opening a Rule File
+
+The central hub of the **Vinaya Notebook** are the Pātimokkha rule files.
+To open a rule, open the "Canon (Pali)" module's "Patimokkha" folder
+and navigate to the rule you're interested in.
+
+![The Pātimokkha Folder](/images/screenshots/mobile_navigate.png)
+
+## The Rule File
+
 When you open a rule file, you'll see something like this:
 
 ![A Pātimokkha Rule File](/images/screenshots/mobile_rule_note_unannotated.png)
@@ -18,8 +29,8 @@ Let's walk through each part of this step-by-step:
 | Rule note element | Explanation |
 |--|--|
 | Path | The path to the rule file. |
-| Filename | The name of the rule. Type `[[` and a Filename to link to a note from one of your own notes. |
-| SC UID | Sutta Central's Unique Identifier for this rule. <br /> In Obsidian, you can also use `aliases` to link to a note. |
+| Filename | The name of the rule. Type `[[` and a Filename to link to a note from one of your own notes. [Learn more](https://help.obsidian.md/links#Link+to+a+file) |
+| SC UID | Sutta Central's Unique Identifier for this rule. <br /> In Obsidian, you can also use `aliases` to link to a note. [Learn more](https://help.obsidian.md/aliases) |
 | The Rule | The Pāli text of the rule along with Ajahn Brahmali's translation |
 | Definitions | Any terms defined in the Vibhaṅga will get hyperlinked. |
 | Variant Footnotes | If there are any variant readings known to SuttaCentral, these will appear as footnotes off that term. |
@@ -54,3 +65,5 @@ Here you'll find a dynamic list of all the links across the vault that link to t
 In the above screenshot, you can see the Bhikkhunī parallel rule
 and Ajahn Geoff's chapter on this rule in The BMCv1.
 This section can be a good way to see if anyone else in your vault has written about this rule.
+
+[Learn more about backlinks](https://help.obsidian.md/plugins/backlinks).

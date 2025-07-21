@@ -22,17 +22,21 @@ Currently, the Vinaya Notebook Plugin syncs the following modules:
 
 The Vinaya Notebook Plugin updates in the background to keep these modules up to date.
 
-You should keep your notes in a folder alongside these modules with your name.
-That way you can easily copy your module over to someone else's vault if you ever want to share your notes with them!
-In this way, the "Vinaya Notes Modules" are not limited to the "official" modules
-listed above, but can include any modules people might want to create and share in the future!
+Your own notes can live in "modules" of your own alongside the "official" modules.
 
-## Opening a Rule File
+## Folders
 
-The central hub of the **Vinaya Notebook** are the Pātimokkha rule files.
-To open a rule, open the "Canon (Pali)" module's "Patimokkha" folder
-and navigate to the rule you're interested in.
+Each module will organize their files in their own way.
+Use the folder navigation to find the files you're interested in by subfolders.
 
-![The Pātimokkha Folder](/images/screenshots/mobile_navigate.png)
+![Navigating a Folder](/images/screenshots/bmc_files.png)
 
-Continue with the next section of this guide to learn how to read a rule file...
+## Search
+
+Obsidian has a powerful, built-in search feature that you can use to find notes about whatever topic you're interested in.
+
+There are two kinds of search in Obsidian:
+  1. **Go to file**: https://help.obsidian.md/plugins/quick-switcher ![Go to file](/images/screenshots/shoe_quick.png)
+  2. **Full text search**: https://help.obsidian.md/plugins/search ![Full text search](/images/screenshots/shoes_search.png)
+
+Please see Obsidian's documentation (linked above) for more details on using these features.

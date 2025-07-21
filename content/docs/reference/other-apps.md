@@ -22,6 +22,7 @@ The vault is **not** currently compatible with:
     - Logseq doesn't understand local Markdown links and has no plans to support them.
     - See [this discussion](https://github.com/logseq/logseq/discussions/8003) for more details.
 
+
 ## Zettlr
 
 To install in Zettlr, merely extract the archive anywhere, then select
