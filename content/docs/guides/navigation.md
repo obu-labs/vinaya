@@ -11,7 +11,7 @@ toc: true
 
 To view the files in your vault:
   1. Open the Obsidian sidebar by clicking the {{< icon view_sidebar flipx >}} icon on the top left corner of the app.
-  2. Make sure you're looking at the "Files" {{< icon folder_open >}} tab of the sidebar.
+  2. (Make sure you're looking at the "Files" tab, indicated with a {{< icon folder_open >}} icon on the desktop app.)
   3. You'll see all the folders in your vault:
 ![The Vault's Folders](/images/screenshots/mobile_modules.png)
 
@@ -21,8 +21,9 @@ Currently, the Vinaya Notebook Plugin syncs the following modules:
 {{< list_modules >}}
 
 The Vinaya Notebook Plugin updates in the background to keep these modules up to date.
+See [Managing Modules](modules) for more information.
 
-Your own notes can live in "modules" of your own alongside the "official" modules.
+Your own notes live in folders alongside these "official" modules.
 
 ## Folders
 
