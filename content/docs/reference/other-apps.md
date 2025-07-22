@@ -4,6 +4,7 @@ title: "Other Notes Apps"
 description: "Information on using the notebook with apps other than Obsidian."
 date: "2025-07-03T11:44:14+07:00"
 toc: true
+icon: apps
 ---
 
 While the Vinaya Notebook was built to work with Obsidian, it also works well with:
