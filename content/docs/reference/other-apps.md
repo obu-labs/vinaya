@@ -17,8 +17,7 @@ For installing in these apps, see the app-specific instructions below.
 
 The vault is **not** currently compatible with:
   - [Joplin](https://joplinapp.org/)
-    - When importing Markdown notes with Frontmatter, Joplin currently doesn't read the file names.
-    - This will be fixed in version 3.5 thanks to [this commit](https://github.com/laurent22/joplin/commit/b2cdfd6358cbd0b9f4d864413f5facb6209ff3e6).
+    - Joplin currently [can't link markdown files with unicode in their paths](https://github.com/laurent22/joplin/issues/12789)
   - [Logseq](https://logseq.com/)
     - Logseq doesn't understand local Markdown links and has no plans to support them.
     - See [this discussion](https://github.com/logseq/logseq/discussions/8003) for more details.
