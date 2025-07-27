@@ -16,12 +16,12 @@ hero:
     pill: false # boolean
     soft: true # boolean
 
-  title: "The Vinaya Notebook"
-  subtitle: A powerful collection of offline resources for studying and writing about the Vinaya on any device.
+  title: "Your Vinaya Bookshelf"
+  subtitle: A collection of offline resources for studying and writing about the Vinaya, powered by <a href="https://obsidian.md/" target="_blank">Obsidian</a>.
 
   image:
     path: "images/screenshots/" # path to image under configured assets directory. default 'images'
-    filename: "teaching_by_rote.png" # filename of your hero image (including file extension)
+    filename: "desktop.png" # filename of your hero image (including file extension)
     alt: "Screenshot of the Vault in Obsidian" # Optional but recommended
     boxShadow: true # default 'false' (excludes .svg images)
     rounded: true # round the image corners? default 'false' (excludes .svg images)
@@ -29,10 +29,10 @@ hero:
   ctaButton:
     icon: download
     btnText: "Download the Vault"
-    url: "vinaya-notes.zip"
+    url: "Vinaya%20Bookshelf.zip"
   cta2Button:
     icon: rocket_launch
-    btnText: "Getting Started"
+    btnText: "Get Started"
     url: "docs/installing"
 
   info: " "
@@ -41,21 +41,21 @@ featureGrid:
   enable: true
   weight: 20
   template: feature grid
-  title: Why use Vinaya Notes?
-  subtitle: The Vinaya Notebook collects together resources from many teachers to help you study and write about the Vinaya.
+  title: Why use the Vinaya Bookshelf?
+  subtitle: The Vinaya Bookshelf collects together resources from many teachers to help you study and write about the Vinaya.
   items:
   - title: Offline
     icon: offline_pin
     description: Take everything you need with you to answer questions about the Vinaya as they come up.
+  - title: Powerful Searching
+    icon: search
+    description: Find every note about a topic---or just the one you're looking for.
+  - title: Link Easily
+    icon: link
+    description: Create a web of knowledge by putting your notebook on the shelf and linking your notes to the resources they're in conversation with.
   - title: Share How You Like
     icon: connect_without_contact
     description: Since all the notes you take are simply files on your device, you're in control of how and when you share your thoughts.
-  - title: Link Easily
-    icon: link
-    description: Create a shared web of knowledge by linking your notes to the resources they're in conversation with---all in the same vault.
-  - title: Powerful Searching
-    icon: search
-    description: Find every note about a topic---or just the one you're looking for---with your app's built-in search.
   - title: Blazing Fast
     icon: speed
     description: Small, plain text files, with no extra dependencies keeps things fast and lightweight.

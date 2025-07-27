@@ -1,7 +1,7 @@
 baseURL = 'https://labs.buddhistuniversity.net/vinaya/'
 languageCode = 'en-us'
 enableEmoji = true
-title = 'The Vinaya Notebook'
+title = 'The Vinaya Bookshelf'
 enableGitInfo = true
 
 [module]
@@ -30,7 +30,7 @@ enableGitInfo = true
     github = "obu-labs"
 
 [params.docs]
-    title = "About the Vinaya Notebook"
+    title = "About the Vinaya Bookshelf"
     darkMode = true
     repoURL = "https://github.com/obu-labs/vinaya"
     repoBranch = "main"

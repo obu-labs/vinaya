@@ -128,7 +128,7 @@ for folder, vnm in LOCAL_VNMS_DATA.items():
     "hash": hash_for_folder(LOCAL_FOLDERS[folder])
   }
     
-print("Writing vinaya-notes.zip vault archive...")
+print("Writing Vinaya\\ Bookshelf.zip vault archive...")
 # You must keep this Plugin Data in sync with the Obsidian Plugin
 # https://github.com/obu-labs/vinaya-notebook/blob/main/src/main.ts#L17
 plugin_data = {
@@ -139,7 +139,7 @@ plugin_data = {
   },
   "installedFolders": INSTALLED
 }
-with zipfile.ZipFile(REPO_ROOT / "static" / "vinaya-notes.zip", "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zip:
+with zipfile.ZipFile(REPO_ROOT / "static" / "Vinaya Bookshelf.zip", "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zip:
   for folder, vnm in VNMS.items():
     plugin_data["canonicalVNMs"][folder] = LOCAL_VNMS_DATA[folder]["vnm"]
     plugin_data["knownFolders"][folder] = VNMS[folder]
