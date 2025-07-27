@@ -10,7 +10,7 @@ toc: true
 
 ## Opening a Rule File
 
-The central hub of the **Vinaya Notebook** are the Pātimokkha rule files.
+The central hub of the **Vinaya Bookshelf** is the Pātimokkha folder.
 To open a rule, open the "Canon (Pali)" module's "Patimokkha" folder
 and navigate to the rule you're interested in.
 

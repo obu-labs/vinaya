@@ -1,15 +1,15 @@
 ---
 weight: 721
 title: "Publishing Your Module"
-description: "How to publish your own Vinaya Notebook Module."
+description: "How to publish your own Vinaya Module."
 icon: "ios_share"
 date: "2025-07-22T14:16:02+07:00"
 toc: true
 ---
 
-To share your own notes with your friends, you simply have to send them the folder from your Vault and have them copy it into their own Vinaya Notebook.
+To share your own notes with your friends, you simply have to send them the folder from your Vault and have them copy it into their own Vinaya Bookshelf.
 
-The rest of this guide will cover what it takes to create a module that the Vinaya Notebook Plugin can track and keep up-to-date.
+The rest of this guide will cover what it takes to create a module that the Obsidian Plugin can track and keep up-to-date.
 
 ## Creating and Hosting Your VNM on GitHub
 
@@ -35,5 +35,5 @@ If you'd prefer to host your module yourself, you can!
 
 Simply put up a ZIP Archive of your folder and a [valid VNM File](vnm) anywhere on the internet and your module can now be added in the Vinaya Notebook Plugin!
 
-Feel free to email me at Khemarato Bhikkhu (at gmail.com) if you have any questions or suggestions on the publishing process or if you'd like to get your module added to the default modules list.
+Feel free to email me, Khemarato Bhikkhu (at gmail.com), if you have any questions or suggestions on the publishing process or if you'd like to get your module added to the default modules list.
 

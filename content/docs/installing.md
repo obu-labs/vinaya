@@ -17,7 +17,7 @@ tags:
 
 ## Install Obsidian
 
-The **Vinaya Notebook** is built on top of [**Obsidian**](https://obsidian.md/), an open-source note-taking app.
+The **Vinaya Bookshelf** is built on top of [**Obsidian**](https://obsidian.md/), an open-source note-taking app.
 If you don't have Obsidian installed, you can [download it here](https://obsidian.md/download).
 
 For information on using the vault with other notes apps, see [Other Notes Apps](reference/other-apps).
@@ -36,4 +36,10 @@ Download the latest version of the vault [**here**](../../Vinaya%20Bookshelf.zip
   Click "**Trust author and enable plugins**" to enable the Vinaya Notebook plugin.
 4. Obsidian will open the Settings page to show you that the Vinaya Notebook plugin has been enabled.
 5. Close the settings modal and the plugin will guide you through the rest of the setup.
+
+## Using Obsidian
+
+If you'd like to learn more about using Obsidian, see the
+["Obsidian for Beginners" YouTube Playlist](https://www.youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd)
+and [the Obsidian documentation](https://help.obsidian.md/).
 

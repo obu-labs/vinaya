@@ -1,7 +1,7 @@
 ---
 weight: 204
 title: "Navigating the Vault"
-description: "Learn the basic navigation features of the Vinaya Notebook."
+description: "Learn the basic navigation features of the Vinaya Bookshelf."
 icon: "touch_app"
 date: "2025-07-10T09:35:14+07:00"
 toc: true
@@ -15,20 +15,23 @@ To view the files in your vault:
   3. You'll see all the folders in your vault:
 ![The Vault's Folders](/images/screenshots/mobile_modules.png)
 
-Each of the top-level folders in your Vinaya Notebook is called a "module."
+Each of the top-level folders in your Vinaya Bookshelf is called a "module."
 
-Currently, the Vinaya Notebook Plugin syncs the following modules:
+Each module typically contains one or more works by a particular author.
+Currently, the Vinaya Bookshelf contains the following modules:
 {{< list_modules >}}
 
-The Vinaya Notebook Plugin updates in the background to keep these modules up to date.
+The [Vinaya Notebook Obsidian Plugin](https://github.com/obu-labs/vinaya-notebook) updates in the background to keep these modules up to date.
 See [Managing Modules](modules) for more information.
 
-Your own notes live in folders alongside these "official" modules.
+Keep your own notes in a separate folder on the shelf alongside the synced folders.
+This is your very own module!
+<!---See [Taking Notes](writing) for more.--->
 
 ## Folders
 
 Each module will organize their files in their own way.
-Use the folder navigation to find the files you're interested in by subfolders.
+Use the hierarchical navigation to find the files you're interested in.
 
 ![Navigating a Folder](/images/screenshots/bmc_files.png)
 

@@ -1,7 +1,7 @@
 ---
 weight: 732
 title: "System Diagram"
-description: "An Overview of the Technology behind the Vinaya Notebook."
+description: "An Overview of the Technology behind the Vinaya Bookshelf."
 icon: "bubble_chart"
 date: "2025-07-21T12:31:02+07:00"
 toc: true
