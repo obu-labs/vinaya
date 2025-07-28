@@ -18,9 +18,9 @@ For installing in these apps, see the app-specific instructions below.
 The vault is **not** currently compatible with:
   - [Joplin](https://joplinapp.org/)
     - Joplin currently [can't link markdown files with unicode in their paths](https://github.com/laurent22/joplin/issues/12789)
-    - Imported folders cannot be updated without breaking any links you've made to the Bookshelf.
+    - Imported folders also cannot be updated in Joplin without breaking your links.
   - [Logseq](https://logseq.com/)
-    - Logseq doesn't understand local Markdown links and has no plans to support them.
+    - Logseq doesn't understand Markdown links to local files.
     - See [this discussion](https://github.com/logseq/logseq/discussions/8003) for more details.
 
 

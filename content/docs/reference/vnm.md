@@ -7,14 +7,14 @@ date: "2025-07-22T15:05:34+07:00"
 toc: true
 ---
 
-The main file for representing a module is its "**vnm**" file.
+The main file for representing a module is its "**vnm**" (Vinaya Notes Module) file.
 
 A VNM file is a [JSON Object file](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON)
 that contains the following metadata about your module:
 
 - **folder**: The name of the module.
 - **description**: A short description of the module: who is the author, etc.
-- **version**: the latest version number in "1.2.3" format (semver: used to tell when an update is needed).
+- **version**: the latest version number in "1.2.3" (semver) format (used to tell when an update is needed).
 - **more_info**: A link to your module's homepage.
 - **zip**: A link to the zip file containing the contents of the module.
 - **submodules**: A list of submodules under this module (see below)

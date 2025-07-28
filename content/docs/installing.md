@@ -17,7 +17,7 @@ tags:
 
 ## Install Obsidian
 
-The **Vinaya Bookshelf** is built on top of [**Obsidian**](https://obsidian.md/), an open-source note-taking app.
+The **Vinaya Bookshelf** is built on top of [**Obsidian**](https://obsidian.md/), the free note-taking app.
 If you don't have Obsidian installed, you can [download it here](https://obsidian.md/download).
 
 For information on using the vault with other notes apps, see [Other Notes Apps](reference/other-apps).

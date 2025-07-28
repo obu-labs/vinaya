@@ -55,3 +55,8 @@ you can add it by pasting it into the "**Add Module**" field in the settings pag
 
 If someone sends you a zip archive of a module, simply extract it into your vault using your file browser.
 
+## Feedback
+
+If you have any suggestions about how to improve the Obsidian Plugin or would like to view its source code,
+please see [the GitHub Repo](https://github.com/obu-labs/vinaya-bookshelf/) and feel free to open an Issue or a Pull Request.
+

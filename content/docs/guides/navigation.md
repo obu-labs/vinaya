@@ -17,16 +17,14 @@ To view the files in your vault:
 
 Each of the top-level folders in your Vinaya Bookshelf is called a "module."
 
-Each module typically contains one or more works by a particular author.
-Currently, the Vinaya Bookshelf contains the following modules:
+Each module contains one or more works by a particular author.
+Currently, the Vinaya Bookshelf imports the following modules:
 {{< list_modules >}}
 
-The [Vinaya Bookshelf Obsidian Plugin](https://github.com/obu-labs/vinaya-bookshelf) updates in the background to keep these modules up to date.
-See [Managing Modules](modules) for more information.
+These modules are "read only" collections of reference material.
+The [Obsidian Plugin](modules) will automatically update these modules for you, so don't modify these notes.
 
-Keep your own notes in a separate folder on the shelf alongside the synced folders.
-This is your very own module!
-<!---See [Taking Notes](writing) for more.--->
+To take your own notes, see [Taking Notes](taking-notes).
 
 ## Folders
 

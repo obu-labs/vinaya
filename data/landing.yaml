@@ -50,9 +50,9 @@ featureGrid:
   - title: Powerful Searching
     icon: search
     description: Find every note about a topic---or just the one you're looking for.
-  - title: Link Easily
-    icon: link
-    description: Create a web of knowledge by putting your notebook on the shelf and linking your notes to the resources they're in conversation with.
+  - title: Take Notes Easily
+    icon: edit_note
+    description: Create a web of knowledge by linking your notes directly to the resources they're in conversation with.
   - title: Share How You Like
     icon: connect_without_contact
     description: Since all the notes you take are simply files on your device, you're in control of how and when you share your thoughts.
