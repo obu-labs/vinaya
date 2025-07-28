@@ -17,7 +17,7 @@ To create a new note:
   1. Open the **Quick Switcher**
      - On Desktop, type the `ctrl/cmd + O` shortcut
      - Or click the {{< icon find_in_page >}} Quick Switcher [Ribbon](https://help.obsidian.md/ribbon) button.
-     - On Mobile, click the ➕ plus button in the bottom center
+     - On Mobile, click the {{< icon add >}} plus button in the bottom center
   2. Type a unique name for your new note
      - This will be used as the note's title and filename.
      - New notes should be about one specific concept and the title should convey that:
