@@ -29,7 +29,7 @@ For a reference example of a valid VNM File, see [the "Canon (Pali)" VNM](https:
 
 ## Submodules
 
-A submodule is a self-contained portion of your module which users can choose to unsubscribe from in the Vinaya Notebook Plugin.
+A submodule is a self-contained portion of your module which users can choose to unsubscribe from in the Vinaya Bookshelf Plugin.
 
 A submodule (in the VNM JSON) is a dictionary with the following fields:
 
@@ -41,7 +41,7 @@ Note that because "**paths**" is a list of subdirectories, a submodule's notes c
 
 ## The "requires" Field
 
-If your module's notes contain links to other modules, you should add those modules to the "requires" field so that the Vinaya Notebook Plugin can warn people if they try to unsubscribe from your module's requirements.
+If your module's notes contain links to other modules, you should add those modules to the "requires" field so that the Vinaya Bookshelf Plugin can warn people if they try to unsubscribe from your module's requirements.
 
 The requires field's value should be a dictionary where the keys are other module names and its (sub)values are also dictionaries.
 These inner dictionaries should have keys for each of that module's subfolders that you refer to mapping to their subdirectories, recursively.

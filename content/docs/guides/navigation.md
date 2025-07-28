@@ -21,7 +21,7 @@ Each module typically contains one or more works by a particular author.
 Currently, the Vinaya Bookshelf contains the following modules:
 {{< list_modules >}}
 
-The [Vinaya Notebook Obsidian Plugin](https://github.com/obu-labs/vinaya-notebook) updates in the background to keep these modules up to date.
+The [Vinaya Bookshelf Obsidian Plugin](https://github.com/obu-labs/vinaya-bookshelf) updates in the background to keep these modules up to date.
 See [Managing Modules](modules) for more information.
 
 Keep your own notes in a separate folder on the shelf alongside the synced folders.

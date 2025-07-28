@@ -17,7 +17,7 @@ VNMS_FILE = HUGO_DATA_DIR / "vnms.yaml"
 LOCAL_VNMS_DATA = yaml.safe_load(VNMS_FILE.read_text())
 THIS_DIR = Path(__file__).parent
 DATA_DIR = THIS_DIR / "data"
-PLUGIN_DIR = DATA_DIR / "Vinaya Notebook"
+PLUGIN_DIR = DATA_DIR / "Vinaya Bookshelf"
 VNMS = {}
 LOCAL_FOLDERS = {}
 INSTALLED = {}
@@ -27,7 +27,7 @@ def now() -> int:
 NOW = now()
 
 # Has to work the same way as the Obsidian Plugin Algo does
-# See: https://github.com/obu-labs/vinaya-notebook/blob/main/src/hashutils.ts
+# See: https://github.com/obu-labs/vinaya-bookshelf/blob/main/src/hashutils.ts
 def hash_for_file_list(file_list: List[Dict[str, str]]) -> str:
   """
   Generate a hash for a list of files based on their paths and hashes.
@@ -90,20 +90,20 @@ if 'GH_TOKEN' in os.environ:
 if token:
   headers['Authorization'] = f"Bearer {token}"
 PLUGIN_RELEASE = requests.get(
-  "https://api.github.com/repos/obu-labs/vinaya-notebook/releases/latest",
+  "https://api.github.com/repos/obu-labs/vinaya-bookshelf/releases/latest",
   headers=headers
 ).json()
 latest_release = PLUGIN_RELEASE["tag_name"]
-LOCAL_FOLDERS["Vinaya Notebook"] = PLUGIN_DIR / latest_release
-if LOCAL_FOLDERS["Vinaya Notebook"].exists():
-  print("  Already have the latest version of the Vinaya Notebook plugin!")
+LOCAL_FOLDERS["Vinaya Bookshelf"] = PLUGIN_DIR / latest_release
+if LOCAL_FOLDERS["Vinaya Bookshelf"].exists():
+  print("  Already have the latest version of the Vinaya Bookshelf plugin!")
 else:
-  LOCAL_FOLDERS["Vinaya Notebook"].mkdir(parents=True)
+  LOCAL_FOLDERS["Vinaya Bookshelf"].mkdir(parents=True)
   print(f"  Downloading v{latest_release}...")
   for asset in PLUGIN_RELEASE["assets"]:
     print(f"    {asset['name']}")
     req = requests.get(asset["browser_download_url"])
-    with open(LOCAL_FOLDERS["Vinaya Notebook"] / asset["name"], "wb") as f:
+    with open(LOCAL_FOLDERS["Vinaya Bookshelf"] / asset["name"], "wb") as f:
       f.write(req.content)
 
 for folder, vnm in LOCAL_VNMS_DATA.items():
@@ -130,7 +130,7 @@ for folder, vnm in LOCAL_VNMS_DATA.items():
     
 print("Writing Vinaya\\ Bookshelf.zip vault archive...")
 # You must keep this Plugin Data in sync with the Obsidian Plugin
-# https://github.com/obu-labs/vinaya-notebook/blob/main/src/main.ts#L17
+# https://github.com/obu-labs/vinaya-bookshelf/blob/main/src/main.ts#L17
 plugin_data = {
   "canonicalVNMs": {},
   "knownFolders": {},
@@ -156,12 +156,12 @@ with zipfile.ZipFile(REPO_ROOT / "static" / "Vinaya Bookshelf.zip", "w", compres
   zip.write(THIS_DIR / "core-plugins.json", arcname=".obsidian/core-plugins.json")
   zip.writestr(".obsidian/backlink.json", '{"backlinkInDocument": true}')
   zip.write(THIS_DIR / "webviewer.json", arcname=".obsidian/webviewer.json")
-  zip.writestr(".obsidian/community-plugins.json", '["vinaya-notebook"]')
-  zip.writestr(".obsidian/plugins/vinaya-notebook/data.json", json.dumps(plugin_data, indent=2))
-  for f in LOCAL_FOLDERS["Vinaya Notebook"].rglob("*"):
+  zip.writestr(".obsidian/community-plugins.json", '["vinaya-bookshelf"]')
+  zip.writestr(".obsidian/plugins/vinaya-bookshelf/data.json", json.dumps(plugin_data, indent=2))
+  for f in LOCAL_FOLDERS["Vinaya Bookshelf"].rglob("*"):
     zip.write(
       f,
-      arcname=".obsidian/plugins/vinaya-notebook/" + str(f.relative_to(LOCAL_FOLDERS["Vinaya Notebook"]))
+      arcname=".obsidian/plugins/vinaya-bookshelf/" + str(f.relative_to(LOCAL_FOLDERS["Vinaya Bookshelf"]))
     )
 
 print("Done!")

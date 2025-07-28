@@ -33,8 +33,8 @@ Download the latest version of the vault [**here**](../../Vinaya%20Bookshelf.zip
 2. Open Obsidian, click "[Manage Vaults](https://help.obsidian.md/manage-vaults)" and open the folder as a new vault.
 3. Obsidian will ask if you trust the vault:
 ![Trust Vault](images/screenshots/trust.png)  
-  Click "**Trust author and enable plugins**" to enable the Vinaya Notebook plugin.
-4. Obsidian will open the Settings page to show you that the Vinaya Notebook plugin has been enabled.
+  Click "**Trust author and enable plugins**" to enable the Vinaya Bookshelf plugin.
+4. Obsidian will open the Settings page to show you that the Vinaya Bookshelf plugin has been enabled.
 5. Close the settings modal and the plugin will guide you through the rest of the setup.
 
 ## Using Obsidian

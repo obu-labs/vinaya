@@ -33,7 +33,7 @@ https://github.com/your-username/your-repo-name/releases/latest/download/manifes
 
 If you'd prefer to host your module yourself, you can!
 
-Simply put up a ZIP Archive of your folder and a [valid VNM File](vnm) anywhere on the internet and your module can now be added in the Vinaya Notebook Plugin!
+Simply put up a ZIP Archive of your folder and a [valid VNM File](vnm) anywhere on the internet and your module can now be added in the Vinaya Bookshelf Plugin!
 
 Feel free to email me, Khemarato Bhikkhu (at gmail.com), if you have any questions or suggestions on the publishing process or if you'd like to get your module added to the default modules list.
 
